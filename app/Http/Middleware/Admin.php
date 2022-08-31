@@ -26,5 +26,6 @@ class Admin
         else{
             return redirect()->route('home');
         }  
+       
     }
 }

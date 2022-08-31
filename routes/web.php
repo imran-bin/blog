@@ -17,13 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('admin/home',function(){
-        return 'Welcome Admin';
-    })->name('admin.home');
-    
-});
-
 
 Auth::routes();
 
