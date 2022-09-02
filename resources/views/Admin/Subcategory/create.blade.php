@@ -72,8 +72,8 @@
                         <td>{{ $data->subcategory_name }}</td>
                         <td>
                             <a href="" class="btn btn-sm btn-info">Edit</a>
-                            {{-- {{ route('category.delete', $data->id) }} --}}
-                            <a href="" class="btn btn-sm btn-danger">Delete</a>
+                      
+                            <a href="  {{ route('subcategory.delete', $data->id) }}" onclick="return confirm('Are you sure to delete')" class="btn btn-sm btn-danger">Delete</a>
                         </td>
 
                     </tr>

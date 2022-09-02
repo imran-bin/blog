@@ -16,6 +16,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('admin/category/delete/{id}', [CategoryController::class,'delete'])->name('category.delete');
     Route::get('admin/subcategory',[SubCategoryController::class,'create'])->name('subcategory.create');
     Route::post('admin/subcategory/store',[SubCategoryController::class,'store'])->name('subcategory.store');
+    Route::get('admin/subcategory/delete/{id}',[SubCategoryController::class,'delete'])->name('subcategory.delete');
 
 });
 

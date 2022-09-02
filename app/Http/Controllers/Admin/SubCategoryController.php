@@ -28,4 +28,10 @@ class SubCategoryController extends Controller
         ]);
         return redirect()->back()->with('message', "subcategory added successfullay");
     }
+    public function delete($id)
+    {
+        $data=Subcategory::find($id);
+        $data->delete();
+        return redirect()->back()->with('status', "subcategory delete successfullay");
+    }
 }
