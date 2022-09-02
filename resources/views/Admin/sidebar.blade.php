@@ -54,7 +54,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('sub-category.create')}}" class="nav-link">
+                            <a href="{{route('subcategory.create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Create Sub-Category</p>
                             </a>
